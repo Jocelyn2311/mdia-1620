@@ -68,40 +68,76 @@
 // Create a variable and use it to store a message that monthly payment is late, and the amount owing. Include the name of one of your horses in the message.
 
 
-let mangoMonthlyRent = 200;
-let mango = {
-    name: "Mango",
-    age: 11,
-    favouriteSnack: "potato",
-    monthlyRent: mangoMonthlyRent,
-    latePayment: mangoMonthlyRent + ( mangoMonthlyRent * 0.2 ),
-};
+// let mangoMonthlyRent = 200;
+// let mango = {
+//     name: "Mango",
+//     age: 11,
+//     favouriteSnack: "potato",
+//     monthlyRent: mangoMonthlyRent,
+//     latePayment: mangoMonthlyRent + ( mangoMonthlyRent * 0.2 ),
+// };
 
-let bombadilocrocodiloMonthlyRent = 500;
-let bombadilocrocodilo = {
-    name: "Bombadilocrocodilo",
-    age: 6,
-    favouriteSnack: "cucumber",
-    monthlyRent: bombadilocrocodiloMonthlyRent,
-    latePayment: bombadilocrocodiloMonthlyRent + ( bombadilocrocodiloMonthlyRent * 0.2 ),
-};
+// let bombadilocrocodiloMonthlyRent = 500;
+// let bombadilocrocodilo = {
+//     name: "Bombadilocrocodilo",
+//     age: 6,
+//     favouriteSnack: "cucumber",
+//     monthlyRent: bombadilocrocodiloMonthlyRent,
+//     latePayment: bombadilocrocodiloMonthlyRent + ( bombadilocrocodiloMonthlyRent * 0.2 ),
+// };
 
-let lananhMonthlyRent = 10;
-let lananh = {
-    name: "Lananh",
-    age: 20,
-    favouriteSnack: "watermelon",
-    monthlyRent: lananhMonthlyRent,
-    latePayment: lananhMonthlyRent + ( lananhMonthlyRent * 0.2 ),
-};
+// let lananhMonthlyRent = 10;
+// let lananh = {
+//     name: "Lananh",
+//     age: 20,
+//     favouriteSnack: "watermelon",
+//     monthlyRent: lananhMonthlyRent,
+//     latePayment: lananhMonthlyRent + ( lananhMonthlyRent * 0.2 ),
+// };
 
-let stableName = "Assignment 1";
-let welcomeMessage = (`Welcome to ${stableName}!`);
+// let stableName = "Assignment 1";
+// let welcomeMessage = (`Welcome to ${stableName}!`);
 
-console.log(welcomeMessage);
+// console.log(welcomeMessage);
 
-console.log(`${bombadilocrocodilo.name}'s monthly payment is late. The amount owning is $${bombadilocrocodilo.latePayment}.`);
+// console.log(`${bombadilocrocodilo.name}'s monthly payment is late. The amount owning is $${bombadilocrocodilo.latePayment}.`);
 
 
 //MAKING CHANGES TO THIS FILE FOR THIS NEW BRANCH
 //MAKING another change to this file!
+
+let horse1 = {
+    name: "mango",
+    nickName: "xoai",
+    favoriteTreat: "candy",
+    age: 12,
+    monthlyRent: 20,
+    isHorseInside: true,
+    isHorseHungry: true,
+    favoriteFood: "pho",
+    favoriteDrink: "matcha",
+}
+
+let horse2 = {
+    name: "strawberry",
+    nickName: "dau",
+    favoriteTreat: "cheestos",
+    age: 8,
+    monthlyRent: 16,
+    isHorseInside: true,
+    isHorseHungry: false,
+    favoriteFood: "chicken",
+    favoriteDrink: "water",
+}
+
+let horse3 = {
+    name: "banana",
+    nickName: "chuoi",
+    favoriteTreat: "twix",
+    age: 10,
+    monthlyRent: 22,
+    isHorseInside: true,
+    isHorseHungry: true,
+    favoriteFood: "nugget",
+    favoriteDrink: "coffee",
+}
