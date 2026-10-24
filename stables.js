@@ -141,3 +141,27 @@ let horse3 = {
     favoriteFood: "nugget",
     favoriteDrink: "coffee",
 }
+
+let horses = [horse1, horse2, horse3];
+
+let stalls = 50;
+
+function stallsAvailable(horses) {
+    console.log(stalls - horses.length);
+}
+
+stallsAvailable(horses);
+
+function horsesRent(horse) {
+    console.log(horse.monthlyRent);
+}
+
+horsesRent(horse3);
+
+function nickName(horse) {
+    return horse.nickName;
+}
+
+let horseNickName = nickName(horse2);
+
+console.log(horseNickName);
