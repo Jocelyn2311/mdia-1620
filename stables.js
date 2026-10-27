@@ -167,7 +167,6 @@ let horse1 = {
     age: 12,
     monthlyRent: 20,
     isHorseInside: true,
-    isHorseHungry: true,
     favoriteFood: "pho",
     favoriteDrink: "matcha",
 }
@@ -179,7 +178,6 @@ let horse2 = {
     age: 8,
     monthlyRent: 16,
     isHorseInside: true,
-    isHorseHungry: false,
     favoriteFood: "chicken",
     favoriteDrink: "water",
 }
@@ -191,7 +189,6 @@ let horse3 = {
     age: 10,
     monthlyRent: 22,
     isHorseInside: true,
-    isHorseHungry: true,
     favoriteFood: "nugget",
     favoriteDrink: "coffee",
 }
@@ -203,12 +200,20 @@ let horse4 = {
     age: 3,
     monthlyRent: 2,
     isHorseInside: false,
-    isHorseHungry: true,
     favoriteFood: "burger",
     favoriteDrink: "redbull",
 }
 
+horse1.isHorseHungry = true;
+horse2.isHorseHungry = false;
+horse3.isHorseHungry = true;
+horse4.isHorseHungry = false;
+
 let horses = [horse1, horse2, horse3];
+
+horses.push(horse4);
+
+console.log(horses.length);
 
 let stalls = 50;
 
@@ -218,10 +223,10 @@ function stallsAvailable(horses) {
 
 stallsAvailable(horses);
 
-let lateFeeRate = 0.20;
+let lateFeeRate = 10;
 
 function horsesRent(horse) {
-    console.log(horse.monthlyRent * (1 + lateFeeRate));
+    console.log(horse.monthlyRent + lateFeeRate);
 }
 
 horsesRent(horse3);
