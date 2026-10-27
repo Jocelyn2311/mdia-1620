@@ -160,6 +160,8 @@
 // Create and invoke a function that returns (not logs) the nickname of a chosen horse. Log out
 // the return value outside of the function.
 
+
+//object-An object stores related information using properties
 let horse1 = {
     name: "mango",
     nickName: "xoai",
@@ -209,6 +211,7 @@ horse2.isHorseHungry = false;
 horse3.isHorseHungry = true;
 horse4.isHorseHungry = false;
 
+//Array-definition: An array stores multiple values
 let horses = [horse1, horse2, horse3];
 
 horses.push(horse4);
@@ -216,7 +219,7 @@ horses.push(horse4);
 console.log(horses.length);
 
 let stalls = 50;
-
+//functions-a function is a reusable block of code that performs a task
 function stallsAvailable(horses) {
     console.log(stalls - horses.length);
 }
@@ -230,7 +233,7 @@ function horsesRent(horse) {
 }
 
 horsesRent(horse3);
-
+//Return Nickname, then log it outside the function.
 function nickName(horse) {
     return horse.nickName;
 }
