@@ -48,7 +48,7 @@ function addToCart(cart, item) {
     //Print out the name of item i want
     console.log(item.name + " was added.");
     //Bonus
-    if (cart.length >= 7) {
+    if (cart.length >= 2) {
         console.log("You can no longer use the express checkout!");
     }
     //Return the number of item
