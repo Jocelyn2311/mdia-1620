@@ -1,3 +1,5 @@
+// Time to go shopping for stable supplies!
+//
 // Create a program that tracks items added to a shopping cart.
 //
 // Initialize the program with an array of objects, representing a cart that already contains 3 items, 
@@ -16,7 +18,6 @@
 //
 // BONUS: Inside the function, log out "You can no longer use the express checkout!"
 // if there are 7 or more items in the cart.
-
 let cart1 = {
     name: "Xoai",
     price: 10,
