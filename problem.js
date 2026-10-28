@@ -17,11 +17,22 @@
 // BONUS: Inside the function, log out "You can no longer use the express checkout!"
 // if there are 7 or more items in the cart.
 
-let cart = [
-    { name: "Xoai", price: 10 },
-    { name: "Snack", price: 5 },
-    { name: "Rice", price: 20 },
-]
+let cart1 = {
+    name: "Xoai",
+    price: 10,
+}
+
+let cart2 = {
+    name: "Snack",
+    price: 5,
+}
+
+let cart3 ={
+    name: "Rice",
+    price: 20,
+}
+
+let cart = [cart1, cart2, cart3];
 
 //Create a new item
 let newItem = {
@@ -36,15 +47,19 @@ function addToCart(cart, item) {
     //Print out the name of item i want
     console.log(item.name + " was added.");
     //Bonus
-    if (cart.length >= 7) {
+
+    let numberOfItems = cart.length;
+
+    if (numberOfItems >= 7) {
         console.log("You can no longer use the express checkout!");
     }
+    
     //Return the number of item
-    return cart.length
+    return numberOfItems;
 }
 
 //call the function
-let totalItem = addToCart(cart, newItem);
+let totalItems = addToCart(cart, newItem);
 
 //print the total item
-console.log(totalItem);
+console.log(totalItems);
