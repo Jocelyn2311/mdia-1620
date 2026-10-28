@@ -218,21 +218,21 @@ horses.push(horse4);
 
 console.log(horses.length);
 
-let stalls = 50;
+let totalStalls = 50;
 //functions-a function is a reusable block of code that performs a task
-function stallsAvailable(horses) {
-    console.log(stalls - horses.length);
+function stallsAvailable(totalStalls, numberOfHorses) {
+    console.log(totalStalls - numberOfHorses);
 }
 
-stallsAvailable(horses);
+stallsAvailable(totalStalls, horses.length);
 
-let lateFeeRate = 10;
+let lateFeeRate = 0.20;
 
-function horsesRent(horse) {
-    console.log(horse.monthlyRent + lateFeeRate);
+function horsesRent(horse, feeRate) {
+    console.log(horse.monthlyRent * (1 + feeRate));
 }
 
-horsesRent(horse3);
+horsesRent(horse3, lateFeeRate);
 //Return Nickname, then log it outside the function.
 function nickName(horse) {
     return horse.nickName;
